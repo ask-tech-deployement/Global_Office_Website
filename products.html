@@ -489,7 +489,7 @@
 
       // API URLs
       const categoryApiUrl =
-        "https://live.asktek.net/admin_ankitacs_api/api/GetallActiveMainCategory";
+        "https://live.asktek.net/global_office_manage_website_api/api/GetallActiveMainCategory";
 
       // Function to fetch all categories for the left menu
       async function fetchCategoryData(url) {
@@ -540,7 +540,7 @@
       const fetchSubCategories = async (id) => {
         try {
           const response = await axios.get(
-            `https://live.asktek.net/admin_ankitacs_api/api/Getonesub/${id}`,
+            `https://live.asktek.net/global_office_manage_website_api/api/Getonesub/${id}`,
             {
               headers: {
                 Authorization: tokent,
@@ -595,7 +595,7 @@
         "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJldmVudGxpc3QiOlt7IlVzZXJJRCI6IjEiLCJMb2dpbkNvZGUiOiIwMSIsIkxvZ2luTmFtZSI6IkFkbWluIiwiRW1haWxJZCI6ImFkbWluQGdtYWlsLmNvbSIsIlVzZXJUeXBlIjoiQURNSU4ifV0sImlhdCI6MTYzODM1NDczMX0.ZW6zEHIXTxfT-QWEzS6-GuY7bRupf2Jc_tp4fXIRabQ";
 
       const api_url =
-        "https://live.asktek.net/admin_ankitacs_api/api/GetallActiveMainCategory";
+        "https://live.asktek.net/global_office_manage_website_api/api/GetallActiveMainCategory";
       // Defining async function
       async function getapi(url) {
         // Storing response
@@ -653,7 +653,7 @@
       const getsubmenu = async (id) => {
         await axios
           .get(
-            `https://live.asktek.net/admin_ankitacs_api/api/Getonesub/${id}`,
+            `https://live.asktek.net/global_office_manage_website_api/api/Getonesub/${id}`,
             {
               headers: {
                 Authorization: tokent2,
@@ -700,7 +700,7 @@
       const getLeftSubmenu = async (id) => {
         await axios
           .get(
-            `https://live.asktek.net/admin_ankitacs_api/api/Getonesub/${id}`
+            `https://live.asktek.net/global_office_manage_website_api/api/Getonesub/${id}`
           )
           .then((res) => {
             let leftTab = "";
@@ -730,7 +730,7 @@
         const cart = JSON.parse(sessionStorage.getItem("cart")) || [];
         try {
           const response = await axios.get(
-            `https://live.asktek.net/admin_ankitacs_api/api/Getoneproduct/${sessionStorage.getItem(
+            `https://live.asktek.net/global_office_manage_website_api/api/Getoneproduct/${sessionStorage.getItem(
               "productid"
             )}`,
             {
@@ -754,7 +754,7 @@
             productHtml += `
             <div class="col-md-3 col-lg-3 mb-1 mb-md-0" style="padding: 10px;">
                 <div class="card text-black product-image-card">
-                    <img src="https://live.asktek.net/admin_ankitacs_api/api/Public/${product.Image}" 
+                    <img src="https://live.asktek.net/global_office_manage_website_api/api/Public/${product.Image}" 
                          class="card-img-top product-image" alt="${product.Product_Details_Description}"
                          style="width: 150px; object-fit:contain;" />
                     <div class="card-body">
@@ -846,7 +846,7 @@
         "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJldmVudGxpc3QiOlt7IlVzZXJJRCI6IjEiLCJMb2dpbkNvZGUiOiIwMSIsIkxvZ2luTmFtZSI6IkFkbWluIiwiRW1haWxJZCI6ImFkbWluQGdtYWlsLmNvbSIsIlVzZXJUeXBlIjoiQURNSU4ifV0sImlhdCI6MTYzODM1NDczMX0.ZW6zEHIXTxfT-QWEzS6-GuY7bRupf2Jc_tp4fXIRabQ";
 
       const api_url2 =
-        "https://live.asktek.net/admin_ankitacs_api/api/GetallActiveMainCategory";
+        "https://live.asktek.net/global_office_manage_website_api/api/GetallActiveMainCategory";
 
       // Fetch categories and render them in the sidebar
       async function getCategories(url) {
@@ -886,7 +886,7 @@
       // Function to fetch subcategories based on category ID
       async function loadSubcategories(categoryId) {
         const response = await axios.get(
-          `https://live.asktek.net/admin_ankitacs_api/api/Getonesub/${categoryId}`,
+          `https://live.asktek.net/global_office_manage_website_api/api/Getonesub/${categoryId}`,
           {
             headers: {
               Authorization: tokent4,
