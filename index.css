@@ -207,8 +207,7 @@
   color: black !important;
 }
 
-.cart-icon
-{
+.cart-icon {
   max-width: 50px;
   max-height: 50px;
 }
@@ -496,4 +495,260 @@
 
 #toast-body {
   color: white !important;
+}
+
+:root {
+  --primary: #ffca2c;
+  --secondary: #ffc107;
+  --dark: #212529;
+  --light: #f8f9fa;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Header Styles */
+.top-bar {
+  background-color: var(--dark);
+  color: white;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.top-bar a {
+  color: white;
+}
+
+.header {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  height: 60px;
+}
+
+.nav-link {
+  color: rgba(0, 0, 0, 0.5) !important;
+  font-weight: 500;
+  padding: 8px 15px !important;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.login-btn {
+  background-color: var(--primary);
+  color: rgba(0, 0, 0, 0.5) !important; 
+  border-radius: 4px;
+  padding: 8px 20px !important;
+  font-weight: normal !important;
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("images/about-banner.jpg") center/cover no-repeat;
+  padding: 120px 0;
+  color: white;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* About Content */
+.about-section {
+  padding: 80px 0;
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.section-title:after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: var(--primary);
+  margin: 15px auto;
+}
+
+.about-img {
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Stats */
+.stats-box {
+  text-align: center;
+  padding: 30px 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin: 15px 0;
+}
+
+.stats-number {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+/* Founders */
+.founder-card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.why-choose-us p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Values */
+.value-card {
+  text-align: center;
+  padding: 30px 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+.value-icon {
+  font-size: 40px;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+/* Clients */
+.clients-section {
+  padding: 60px 0;
+  background-color: white;
+}
+
+.client-logo {
+  height: 80px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.client-logo:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+/* Brands */
+.brands-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.brand-logo {
+  height: 60px;
+  object-fit: contain;
+  margin: 15px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.brand-logo:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+/* Footer */
+.footer {
+  background-color: #152f4f;
+  color: white;
+  padding: 60px 0 30px;
+}
+
+.footer h4 {
+  color: white;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.footer h4:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 50px;
+  height: 2px;
+  background: var(--primary);
+}
+
+.footer a {
+  color: #adb5bd;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+  color: white;
+  transition: all 0.3s;
+}
+
+.social-icon:hover {
+  background: var(--primary);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 32px;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  .stats-number {
+    font-size: 36px;
+  }
 }
