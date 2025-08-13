@@ -188,7 +188,7 @@
         </div>
       </div>
     </div>
-     <header class="header sticky-top">
+    <header class="header sticky-top">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">
@@ -203,10 +203,10 @@
               <a class="nav-link fw-bold" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active fw-bold" href="about.html">About</a>
+              <a class="nav-link active" href="about.html">About</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
                 Products
               </a>
               <ul class="dropdown-menu" id="maincategory">
@@ -220,7 +220,7 @@
               <a class="nav-link fw-bold" href="enquiryus.html">Enquiry</a>
             </li>
             <li class="nav-item ms-lg-3">
-              <a class="nav-link login-btn" href="https://live.asktek.net/ankitacs/" target="_blank">Login</a>
+              <a class="nav-link btn-warning" href="https://live.asktek.net/ankitacs/" target="_blank">Login</a>
             </li>
             <li class="nav-item ms-lg-2">
               <a class="nav-link fw-bold" href="cart.html">
@@ -373,7 +373,7 @@
     </div>
     <br />
 
-    <div class="container-fluid py-2">
+       <div class="container-fluid py-2">
       <h4 class="pl-3 mx-3 rounded-4 pt-1 text-left">Corporate Stationeries</h4>
 
       <!-- Scrollable product section for Corporate Stationeries -->
@@ -405,7 +405,7 @@
           <div class="col-md-6">
             <img
               class="bannerslide1"
-              src="images/ankita/banners/gon3.png"
+              src="images/ankita/banners/banner2.jpeg"
               alt="banner2"
             />
           </div>
@@ -436,7 +436,7 @@
           <div class="col-md-4">
             <img
               class="bannerslide1"
-              src="images/ankita/banners/gobal.jpg"
+              src="images/ankita/banners/4.png"
               alt="banner2"
             />
           </div>
@@ -444,14 +444,14 @@
           <div class="col-md-4">
             <img
               class="bannerslide1"
-              src="images/ankita/banners/new7.png"
+              src="images/ankita/banners/2.png"
               alt="banner1"
             />
           </div>
           <div class="col-md-4">
             <img
               class="bannerslide1"
-              src="images/ankita/banners/new8.png"
+              src="images/ankita/banners/3.png"
               alt="banner2"
             />
           </div>
@@ -960,7 +960,7 @@
         const cart = JSON.parse(sessionStorage.getItem("cart")) || [];
         const cartCount = cart.length;
         document.getElementById("cartCount").textContent = cartCount;
-        // document.getElementById("cartCount2").textContent = cartCount;
+        document.getElementById("cartCount2").textContent = cartCount;
       }
 
       // Call this function to update the cart count on page load
