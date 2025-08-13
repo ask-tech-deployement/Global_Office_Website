@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-  <title>About Us | Ankita Computer & Stationer</title>
+  <title>About Us | Global Office Needs</title>
   <meta name="keywords" content="office supplies, stationery, corporate gifts, Bangalore" />
-  <meta name="description" content="Learn about Ankita Computer & Stationer - your trusted office supplies partner in Bangalore since 2005." />
+  <meta name="description" content="Learn about Global Office Needs - your trusted office supplies partner in Bangalore since 2005." />
   <meta name="author" content="" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
@@ -317,7 +317,7 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">
-          <img src="images/ankita/gon2.png" alt="Ankita Computer & Stationer">
+          <img src="images/ankita/gon2.png" alt="Global Office Needs">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
@@ -412,7 +412,7 @@
     <div class="container">
       <div class="section-title">
         <h2>Our Leadership</h2>
-        <p>Meet the visionary leaders who built Ankita Computer & Stationer from the ground up</p>
+        <p>Meet the visionary leaders who built Global Office Needs from the ground up</p>
       </div>
       <div class="row">
         <div class="col-md-6">
@@ -625,7 +625,7 @@
     function show(data) {
       let tab = ``;
       for (const r of data) {
-        tab += `<li><a class="dropdown-item" href="#" value=${r.MainCategory_Id} onmouseover="getsubmenu(${r.MainCategory_Id})">${r.MainCategory_Description}</a></li>`;
+        tab += `<li><a class="dropdown-item font-new" href="#" value=${r.MainCategory_Id} onmouseover="getsubmenu(${r.MainCategory_Id})">${r.MainCategory_Description}</a></li>`;
       }
       document.getElementById("maincategory").innerHTML = tab;
     }
@@ -643,7 +643,7 @@
         .then((res) => {
           let tab = ``;
           for (const r of res.data) {
-            tab += ` <li><a class="dropdown-item" href="products.html" onclick="productid(${r.Category_Id})">${r.Category_Description}</a></li>`;
+            tab += ` <li><a class="dropdown-item font-new" href="products.html" onclick="productid(${r.Category_Id})">${r.Category_Description}</a></li>`;
           }
           document.getElementById(`sucategory${id}`).innerHTML = tab;
         });

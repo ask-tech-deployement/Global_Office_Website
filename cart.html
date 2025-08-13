@@ -671,7 +671,7 @@
           </ul>`;
 
         for (const r of data) {
-          tab += `<li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#" value=${r.MainCategory_Id} onmouseover="getsubmenu(${r.MainCategory_Id})" >${r.MainCategory_Description}</a>
+          tab += `<li class="dropdown-submenu"><a class="dropdown-item  font-new dropdown-toggle" href="#" value=${r.MainCategory_Id} onmouseover="getsubmenu(${r.MainCategory_Id})" >${r.MainCategory_Description}</a>
           <ul class="dropdown-menu" id="sucategory${r.MainCategory_Id}">
                                              
                                            </ul>
@@ -699,7 +699,7 @@
 
             let tab = ``;
             for (const r of res.data) {
-              tab += ` <li><a class="dropdown-item" href="products.html" onclick="productid(${r.Category_Id})" >${r.Category_Description}</a></li>`;
+              tab += ` <li><a class="dropdown-item font-new" href="products.html" onclick="productid(${r.Category_Id})" >${r.Category_Description}</a></li>`;
             }
 
             // Setting innerHTML as tab variable

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <!-- site metas -->
-    <title>Products | AnkitaComputer & Stationer</title>
+    <title>Products | Global Office Needs</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -147,7 +147,7 @@
   <body class="main-layout footer_to90 project_page">
     <!-- loader  -->
     <div class="loader_bg">
-      <div class="loader"><img src="images/ankita/global.gif" alt="#" /></div>
+      <div class="loader"><img src="images/loading.gif" alt="#" /></div>
     </div>
     <!-- end loader -->
 
@@ -190,186 +190,65 @@
       </div>
     </div>
 
-    <header class="sticky-top shadow-bottom-header">
-      <!-- Logo and Navigation with Row & Col -->
-      <div class="header-bg py-1">
-        <div class="container-fluid">
-          <!-- Full width container -->
-          <div class="row align-items-center justify-content-between">
-            <!-- Logo -->
-            <div class="col-6 col-md-2 text-start">
-              <a href="index.html" class="logo my-1">
-                <img
-                  src="images/ankita/gon2.png"
-                  alt="ACS Logo"
-                  class="img-fluid"
-                  style="max-height: 70px"
-                />
-              </a>
-            </div>
-
-            <div class="col-6 col-md-10 d-flex justify-content-end">
-              <nav class="navbar navbar-expand-lg navbar-dark text-primary">
-                <a href="cart.html" class="logo my-1 d-block d-lg-none">
-                  <div>
-                    <img
-                      src="images/ankita/cart.png"
-                      alt="ACS Logo"
-                      class="img-fluid"
-                      style="max-height: 50px"
-                    />
-                    <span
-                      class="badge badge-dark count-position2"
-                      id="cartCount"
-                      >0</span
-                    >
-                  </div>
-                </a>
+    <header class="header sticky-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/ankita/gon2.png" alt="Global Office Needs" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
                 <a
-                  onclick="openNav()"
-                  class="logo my-1 d-block d-lg-none"
-                  style="cursor: pointer"
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
                 >
-                  <div>
-                    <img
-                      src="images/ankita/hamburger.png"
-                      alt="ACS Logo"
-                      class="img-fluid"
-                      style="max-height: 50px"
-                    />
-                  </div>
+                  Products
                 </a>
-                <!-- Navbar links for larger screens -->
-                <div class="collapse navbar-collapse" id="navbarContent">
-                  <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                      <a
-                        class="nav-link  text-info-emphasis"
-                        href="index.html"
-                        >Home</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link  text-info-emphasis"
-                        href="about.html"
-                        >About</a
-                      >
-                    </li>
-                    <li class="nav-item active dropdown">
-                      <a
-                        class="nav-link dropdown-toggle  text-info-emphasis"
-                        href="http://example.com"
-                        id="navbarDropdownMenuLink"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        Products
-                      </a>
-                      <ul
-                        class="dropdown-menu"
-                        id="maincategory"
-                        aria-labelledby="navbarDropdownMenuLink"
-                      >
-                        <ul class="dropdown-menu"></ul>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link  text-info-emphasis"
-                        href="contactus.html"
-                        >Contact Us</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link  text-info-emphasis"
-                        href="images/ankita/ACS.pdf"
-                        >Brochure</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link  text-info-emphasis"
-                        href="enquiryus.html"
-                        >Enquiry</a
-                      >
-                    </li>
-
-                    <li class="nav-item px-3">
-                      <a
-                        href="http://targetdemo.asktek.net/tompg.majestic.office.webapp/"
-                        target="_blank"
-                        class="btn btn-warning "
-                        >Login</a
-                      >
-                    </li>
-                  </ul>
-                  <a href="cart.html" class="logo d-none d-lg-block">
-                    <div class="position-relative">
-                      <img
-                        src="images/ankita/cart.png"
-                        alt="ACS Logo"
-                        class="img-fluid"
-                        style="max-height: 50px; max-width: 50px"
-                      />
-                      <span
-                        class="badge badge-dark count-position3"
-                        id="cartCount2"
-                        >0</span
-                      >
-                    </div>
-                  </a>
-                </div>
-
-                <!-- Sidebar and content -->
-                <div id="mySidebar" class="sidebar">
-                  <a
-                    href="javascript:void(0)"
-                    class="closebtn"
-                    onclick="closeNav()"
-                    >&times;</a
-                  >
-                  <a href="index.html">Home</a>
-                  <a href="about.html">About</a>
-                  <div class="nav-item">
-                    <a
-                      class="nav-link collapsed"
-                      data-bs-toggle="collapse"
-                      href="#productDropdown"
-                      aria-expanded="false"
-                      aria-controls="productDropdown"
-                    >
-                      <span>Products</span>
-                      <i class="fa-solid fa-caret-down"></i>
-                      <i class="bi bi-caret-down-fill"></i>
-                      <!-- Bootstrap dropdown icon -->
-                    </a>
-                    <div id="productDropdown" class="collapse">
-                      <div class="accordion" id="categoryAccordion">
-                        <ul
-                          id="sidebar-category-list"
-                          class="list-unstyled"
-                        ></ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <a href="contactus.html">Contact Us</a>
-                  <a href="enquiryus.html">Enquiry</a>
-                  <a href="images/RR Brochure.pdf">Brochure</a>
-
-                  <a
-                    href="http://targetdemo.asktek.net/tompg.majestic.office.webapp/"
-                    target="_blank"
-                    >Login</a
-                  >
-                </div>
-              </nav>
-            </div>
+                <ul class="dropdown-menu" id="maincategory">
+                  <!-- Will be populated by JavaScript -->
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="enquiryus.html">Enquiry</a>
+              </li>
+              <li class="nav-item ms-lg-3">
+                <a
+                  class="nav-link login-btn"
+                  href="http://targetdemo.asktek.net/tompg.majestic.office.webapp/"
+                  target="_blank"
+                  >Login</a
+                >
+              </li>
+              <li class="nav-item ms-lg-2">
+                <a class="nav-link" href="cart.html">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="badge bg-primary" id="cartCount">0</span>
+                </a>
+              </li>
+            </ul>
           </div>
-        </div>
+        </nav>
       </div>
     </header>
 
@@ -637,7 +516,7 @@
           </ul>`;
 
         for (const r of data) {
-          tab += `<li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#" value=${r.MainCategory_Id} onmouseover="getsubmenu(${r.MainCategory_Id})" >${r.MainCategory_Description}</a>
+          tab += `<li class="dropdown-submenu"><a class="dropdown-item font-new dropdown-toggle" href="#" value=${r.MainCategory_Id} onmouseover="getsubmenu(${r.MainCategory_Id})" >${r.MainCategory_Description}</a>
           <ul class="dropdown-menu" id="sucategory${r.MainCategory_Id}">
                                              
                                            </ul>
@@ -665,7 +544,7 @@
 
             let tab = ``;
             for (const r of res.data) {
-              tab += ` <li><a class="dropdown-item" href="products.html" onclick="productid(${r.Category_Id})" >${r.Category_Description}</a></li>`;
+              tab += ` <li><a class="dropdown-item font-new" href="products.html" onclick="productid(${r.Category_Id})" >${r.Category_Description}</a></li>`;
             }
 
             // Setting innerHTML as tab variable
@@ -720,7 +599,7 @@
         const cart = JSON.parse(sessionStorage.getItem("cart")) || [];
         const cartCount = cart.length;
         document.getElementById("cartCount").textContent = cartCount;
-        document.getElementById("cartCount2").textContent = cartCount;
+        // document.getElementById("cartCount2").textContent = cartCount;
       }
       // Call this function to update the cart count on page load
       updateCartCount();
@@ -918,7 +797,7 @@
         const cart = JSON.parse(sessionStorage.getItem("cart")) || [];
         const cartCount = cart.length;
         document.getElementById("cartCount").textContent = cartCount;
-        document.getElementById("cartCount2").textContent = cartCount;
+        // document.getElementById("cartCount2").textContent = cartCount;
       }
       updateCartCount();
     </script>

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <!-- site metas -->
-    <title>Enquiry | AnkitaComputer & Stationer</title>
+    <title>Enquiry | Global Office Needs</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -170,7 +170,7 @@
           <a class="navbar-brand" href="index.html">
             <img
               src="images/ankita/gon2.png"
-              alt="Ankita Computer & Stationer"
+              alt="Global Office Needs"
             />
           </a>
           <button
@@ -253,7 +253,7 @@
         ><a href="tel:+91+91 94483 84120">+91 97312 10403</a>
         <br />
         <span class="tel" style="color: #c46250">Email-Id:</span>
-        <a href="mailto:sales@globaloffice.in">sales@globaloffice.in</a>
+        <a href="mailto:sales@globaloffice.in" class="text-lowercase">sales@globaloffice.in</a>
       </p>
     </div>
     <!-- contact section -->
@@ -335,15 +335,15 @@
     </div>
 
     <!--  footer -->
-    <footer>
+ <footer>
       <div class="footer">
         <div class="container">
           <div class="row py-3">
             <div class="col-lg-4 col-xs-12 about-company text-center">
               <h4 class="mt-lg-0 mt-sm-3 text-center">Address</h4>
-              <h6 class="text-center">ANKITA COMPUTER & STATIONERS</h6>
+              <h6 class="text-center">GLOBAL OFFICE NEEDS</h6>
               <p class="text-white-50 text-center">
-                40, 14th Cross, 2nd Main, Sampangiram Nagar, Bangalore - 560027
+                367 and 368, Krishna Reddy Layout, Amarjyoti Layout, Domlur, Bengaluru, Karnataka 560071
               </p>
             </div>
             <div class="col-lg-2 col-xs-12 links text-center">
@@ -353,7 +353,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
                 <li><a href="enquiryus.html">Enquiry</a></li>
                 <li>
                   <a href="images/ankita/ACS.pdf" target="_blank">Brochure</a>
@@ -363,11 +363,11 @@
             <div class="col-lg-4 col-xs-12 location">
               <h4 class="mt-lg-0 mt-sm-4">Contact</h4>
               <p class="mb-0">
-                <i class="fa fa-phone mr-3"></i>+91 80 4149 9261
+                <i class="fa fa-phone mr-3"></i>+91 97312 10403
               </p>
               <p>
                 <i class="fa fa-envelope-o mr-3 text-lowercase"></i
-                ><span class="text-lowercase">ankitacompu@yahoo.com</span>
+                ><span class="text-lowercase">sales@globaloffice.in</span>
               </p>
             </div>
             <div class="col-lg-2 col-xs-12 location">
@@ -388,21 +388,20 @@
               </ul>
             </div>
           </div>
-
           <p class="text-center mt-4" style="font-size: small; color: #fafafa">
             © Copyright 2024.
             <a
-              href="https://live.asktek.net/admin_ankitacs"
+              href="https://live.asktek.net/global_office_manage_website_ui/login"
               target="_blank"
               style="text-decoration: none; color: skyblue"
-              >Ankita Computers & Stationers.
+              >Global Office Needs.
             </a>
             All rights reserved. | Designed and developed by
             <a
               href="https://asktek.net/"
               target="_blank"
               style="text-decoration: none; color: skyblue"
-              >ASK Technologies</a
+              >Ask Technology</a
             >
           </p>
         </div>
@@ -546,7 +545,7 @@
          </ul>`;
 
         for (const r of data) {
-          tab += `<li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#" value=${r.MainCategory_Id} onmouseover="getsubmenu(${r.MainCategory_Id})" >${r.MainCategory_Description}</a>
+          tab += `<li class="dropdown-submenu"><a class="dropdown-item font-new dropdown-toggle" href="#" value=${r.MainCategory_Id} onmouseover="getsubmenu(${r.MainCategory_Id})" >${r.MainCategory_Description}</a>
          <ul class="dropdown-menu" id="sucategory${r.MainCategory_Id}">
                                             
                                           </ul>
@@ -574,7 +573,7 @@
 
             let tab = ``;
             for (const r of res.data) {
-              tab += ` <li><a class="dropdown-item" href="products.html" onclick="productid(${r.Category_Id})" >${r.Category_Description}</a></li>`;
+              tab += ` <li><a class="dropdown-item font-new" href="products.html" onclick="productid(${r.Category_Id})" >${r.Category_Description}</a></li>`;
             }
 
             // Setting innerHTML as tab variable
