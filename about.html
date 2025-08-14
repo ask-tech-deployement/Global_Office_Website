@@ -284,9 +284,16 @@
       <div class="d-flex gap-5 align-items-center justify-content-center">
         <div class="text-center text-md-start">
           <ul class="list-inline mb-0">
-            <li class="list-inline-item">
-              <a href="tel:+919731210403"><i class="fas fa-phone-alt me-2"></i>+91 97312 10403</a>
-            </li>
+           <li class="list-inline-item text-white">
+                <a
+                  href="https://wa.me/919731210403"
+                  class="text-white"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-whatsapp"></i> Call or WhatsApp: +91
+                  97312 10403
+                </a>
+              </li>
             <li class="list-inline-item ms-3">
               <a href="mailto:sales@globaloffice.in"><i class="fas fa-envelope me-2"></i>sales@globaloffice.in</a>
             </li>
@@ -348,11 +355,33 @@
               <a class="nav-link login-btn" href="http://targetdemo.asktek.net/tompg.majestic.office.webapp/" target="_blank">Login</a>
             </li>
             <li class="nav-item ms-lg-2">
-              <a class="nav-link " href="cart.html">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="badge bg-primary" id="cartCount">0</span>
-              </a>
-            </li>
+                <a
+                  class="nav-link position-relative"
+                  href="cart.html"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    background: linear-gradient(135deg, #ffd600, #ffc107);
+                    color: #ffffff;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                  "
+                >
+                  <i
+                    class="fas fa-shopping-cart fa-lg"
+                    style="color: white"
+                  ></i>
+                  <span
+                    class="badge position-absolute top-0 start-100 translate-middle bg-danger rounded-pill"
+                    id="cartCount"
+                    style="font-size: 0.75rem; padding: 4px 6px"
+                    >0</span
+                  >
+                </a>
+              </li>
           </ul>
         </div>
       </nav>
