@@ -555,10 +555,11 @@ body {
 
 .login-btn {
   background-color: orange !important;
-  color: white !important;
+  color: rgb(41, 4, 4) !important;
   border-radius: 4px;
-  padding: 8px 20px !important;
+  padding: 3px 20px !important;
   font-weight: normal !important;
+  margin-top: 6px;
 }
 
 /* Hero Section */
